@@ -50,7 +50,7 @@ class CheckingAccount:
             raise ValueError('number must be bigger than zero')
         self.__number = number
 
-    def transfer(self, value:int, favored):
+    def transfer(self, value:int, favored:'CheckingAccount'):
         if value < 0:
             raise ValueError('value must be greater than or equal to zero')
 
